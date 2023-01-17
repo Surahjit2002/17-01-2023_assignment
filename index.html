@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wap</title>
+    <style>
+        #p1{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: larger;
+            font-weight: 100;
+        }
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body style="background-color: aquamarine;">
+    <h1><marquee style="color: rgb(248, 7, 27);"><u>Assignment</u></marquee></h1>
+    <p id="p1"><i>Lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias minus corrupti cumque incidunt, tenetur veniam pariatur suscipit dolorem possimus officiis velit molestias, a deserunt quos animi. Mollitia, corporis? Magni, reiciendis. ipsum  ad adipisci praesentium. , quidem amet iure ea nobis autem.</p>
+   
+    <button type="button" onclick="myfn()">click me</button>
+<script>
+    function myfn()
+    {
+        document.getElementById("p1").innerHTML="Change pargraph "+"<br>"+"It's Work";
+    }
+</script>
+<hr>
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+style="background-color:#D94A38;width:120px;height:20px;padding:40px;">
+Mouse Over Me</div>
+
+<script>
+function mOver(obj) {
+  obj.innerHTML = "Thank You"
+}
+
+function mOut(obj) {
+  obj.innerHTML = "Mouse Over Me"
+}
+</script>
+<hr>
+<div onmousedown="mDown(this)" onmouseup="mUp(this)"
+style="background-color:#D94A38;width:90px;height:20px;padding:40px;">
+Click Me</div>
+
+<script>
+function mDown(obj) {
+  obj.style.backgroundColor = "#1ec5e5";
+  obj.innerHTML = "Release Me";
+}
+
+function mUp(obj) {
+  obj.style.backgroundColor="#D94A38";
+  obj.innerHTML="Thank You";
+}
+</script>
+</body>
+</html>
